@@ -1,0 +1,23 @@
+all:
+  Region:
+    children:
+      NAM:
+        children:
+          DataCenter1:
+            children:
+            Row:
+              children:
+                Rack:
+                  children:
+                    HostGroup1:
+                      hosts:
+                        ecw-[01:12].mydomain.com:
+                    HostGroup2:
+                      hosts:
+                        ecw-[13:24].mydomain.com:
+                    HostGroup2:
+                       hosts:
+                         ecw-[13:24].mydomain.com:
+      EUW:
+        children:
+           DateCenter2:

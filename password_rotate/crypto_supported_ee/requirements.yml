@@ -1,0 +1,5 @@
+# This file contains the needed collections for the execution environment
+---
+collections:
+  - name: community.zabbix
+  - name: community.crypto

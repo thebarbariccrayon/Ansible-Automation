@@ -1,0 +1,21 @@
+---
+version: 1
+ 
+build_arg_defaults:
+  EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-21/ee-supported-rhel8'
+ 
+# ansible_config: 'ansible.cfg'
+ 
+dependencies:
+  galaxy: requirements.yml
+  python: requirements.txt
+  system: system-reqs.txt # --> this example is to install DNF packages we may need
+#  system: bindep.txt --> this is commented out because we do not need and binary dependencies
+ 
+# additional_build_steps: --> Additional build steps can be used to install custom scripts at build if needed
+#   prepend: |
+#     RUN whoami
+#     RUN cat /etc/os-release
+#   append:
+#     - RUN echo This is a post-install command!
+#     - RUN ls -la /etc

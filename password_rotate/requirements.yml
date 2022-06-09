@@ -1,0 +1,5 @@
+---
+collections:
+  #https://github.com/ansible-collections/community.crypto
+  - community.crypto
+

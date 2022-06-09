@@ -1,0 +1,3 @@
+# This file conatins the needed python modules for this execution environment
+ansible
+zabbix-api
